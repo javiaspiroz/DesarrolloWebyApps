@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+.product {
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.card-img-top{
+    height: auto;
+}
+
+.jumbotron {
+    background-image: url("https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: white;
+    
+}
+
+.jumbotron .titulo{
+    background: #311010;
+    opacity: 0.8;
+   
+}
+h1{
+    color: white;
+}
+
+.blockquote{
+    margin: 3% auto;
+}
+
+.btn-primary{
+    background-color: #aa2727;font-family: 'Lora', serif;
+    border: 0px;
+}
+.btn-primary:hover{
+    background-color: rgb(255, 72, 102);font-family: 'Lora', serif;
+    border: 0px;
+}
+.navbar{
+    background-color: #aa2727;
+    margin-bottom: 2.5%;
+}
+.navbar-brand{
+    color: white;
+    font-family: 'Lora', serif;
+}
+.navbar-brand:hover{
+    color: white;
+    font-family: 'Lora', serif; 
+    font-weight: bolder;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: white;
+    font-weight: bolder;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  
+
+input[type=submit] {
+    background-color:#aa2727;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+
+input[type=submit]:hover {
+    background-color: #aa2727;
+}
+  
+ 
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container-fluid p{
+    text-align: justify;
+}
+
+h5{
+    font-weight: bold;
+    color: #aa2727;
+    font-size: 1.5em;
+}
+
+.prods{
+    width: 100%;
+    height: 250px;
+}
+
+.col-lg-7{
+    align-self: center;
+}
+
+.caja_texto{
+    background-color: #f2f2f2;
+}
+
+.prodIndex{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Crushed);
+
+html{
+    background-color: #a88989;        
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2em;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    color: rgb(8, 104, 32);
+}
+
+h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: rgb(93, 214, 123);
+}
+
+.navigation li {
+    color: gray;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+	text-align: justify;
+    width: 80%;
+}
+
+/*footer {
+
+}*/

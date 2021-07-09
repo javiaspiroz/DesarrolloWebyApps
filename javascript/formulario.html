@@ -1,0 +1,29 @@
+<html>
+    <head>
+         <title>Formulario simple</title>
+         <meta charset="utf-8">
+         <script src="js/validarFormulario.js"></script>
+        </head> 
+        <body> 
+            <h1>Registro de usuario</h1>
+            <form name="registro" onsubmit="return validarFormulario(this)"action="procesaFormulario.php"> 
+            <table summary="formulario de registro">
+                <tbody>
+                    <tr>
+                        <td><label   for="username">Elige nombre de usuario:</label></td> 
+                        <td><input   name="username"   size="35"   maxlength="50"   type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pwd">Elige tu clave:</label></td>
+                        <td><input name="pwd"     size="35"     maxlength="25"     type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><input name="Submit" value="Enviar" type="submit" ></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

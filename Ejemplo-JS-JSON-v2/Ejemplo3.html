@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+
+    <title>Ejemplo 3 - JSON </title>
+    <meta name="author" content="Ana del Valle Corrales Paredes">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="_css/styles2.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    
+ <script>
+$(document).ready(function () {
+    /* The $.getJSON() method loads the JSON-encoded data from the server using a GET HTTP request based on a URL to which the request is sent.
+    */
+    
+      
+
+    
+    $.getJSON('usuarios.json', function(usuarios) { 
+         
+        for (var i = 0; i < usuarios.usuarios.length; i++) {
+            var user = usuarios.usuarios[i];
+            console.log(user.name);
+         }
+         
+        var output ="";
+         $.each(usuarios.usuarios, function(key, val) { 
+             output += '<li>';
+             output += '<ul class="ul_user">';
+             output += '<li>';
+             output += '<a href=';
+             output += '"' + val.url + '">';
+             output += '<img src="';
+             output += val.foto + '" class="clip-circle">';
+             output += '</a>';
+             output +='</li>'; 
+             output += '<li><h2 class="nombre_usuario">' + val.name + '</h2></li>'; 
+             output += '<li>' + val.shortname + '</li>'; 
+             output += '<li>' + val.dir + '</li>'; 
+             output += '<li>' + val.bio + '</li>'; 
+             output +='</ul>'; 
+             output +='</li>'; 
+         }); 
+        
+         output +='</ul>'; 
+         $('#users').append(output); 
+
+    }); 
+});        
+
+
+     
+     
+ </script>
+    
+</head>
+<body>
+
+  <nav class="navigation">
+     <ul>
+      <li><a href="Ejemplo2.html">HOME</a></li>
+      <li><a href="Ejemplo3.html">ABOUT US</a></li>
+      <li>OUR SERVICES</li>
+      <li>CONTACT</li>
+    </ul>
+  </nav>
+
+  <div id="banner-about-us">
+    <div class="contenido">
+      <h1>ABOUT US</h1>
+    </div>
+  </div>
+
+<div id="main" class="contenido">
+
+    <ul id="users" class="description">
+ </ul>
+
+ </div>
+
+  <div class="foot">
+    <a href="#">Compartir</a>
+    <a href="#">Contactar</a>
+    <a href="#">Salir</a>
+  </div>
+
+
+</body></html>

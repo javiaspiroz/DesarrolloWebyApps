@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+
+
+html{
+    background-color: rgb(12, 141, 12);    
+    
+}
+
+.cajas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   
+    
+}
+.caja_texto{
+    border: 1px solid green;
+    background-color: white;
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    margin: 30px ;
+    
+}
+   /* height: auto;
+    margin: 0% 1%;
+    padding: 10px;
+    text-decoration: none; 
+}
+*/
+
+h1{
+    color: white;
+    font-family: 'Merienda One', cursive;
+    margin-left: 1%;
+    text-transform: uppercase;
+}
+h2{
+    color: rgb(37, 53, 37);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  sans-serif;
+}
+p{
+    color: rgb(49, 48, 48);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  sans-serif;
+} 
+.product{
+    width: 90%;  /* % con respecto al tamaño del padre*/
+    height: auto;
+}
+
+#banner {
+    background-image: url("https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-position: bottom center;
+    height: 70vh;  
+    width: 100vw;   /* Lo  puedo poner tambien como 100% */
+  }
+  
+  #banner #subtitulo{
+    border: 2px solid white;
+    position: relative;
+    top: 20vh;
+    width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    color: white;
+    font-family: 'Merienda One', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(42, 27, 27);
+    opacity: 90%;
+  }

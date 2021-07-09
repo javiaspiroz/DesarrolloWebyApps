@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validando un formulario</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h1>Validando un fomulario con HTML y expresiones regulares</h1>
+        <p class="note">Los campos marcados con * son obligatorios.</p>
+        <form>
+            <label for="name">Nombre: *</label>
+            <input type="text" id="name" name="name"  placeholder="Tu nombre" pattern="[a-zA-Z]+" required>
+            <br>
+            <label for="name">Tu email: *</label>
+            <input type="email" id="email" name="email" placeholder="user@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <br>
+            <label for="name">Edad: </label>
+            <input type="number" id="age" name="age" min="10" max="80" placeholder="30">
+            <br>
+            <label for="name">Web Page: *</label>
+            <input type="url" id="web" name="web" placeholder="https://universidadeuropea.es" pattern="https?://.+" required>
+            <br>
+            <label for="name">Usuario: *</label>
+            <input type="text" id="user" name="user"  placeholder="usuario" pattern="[a-zA-Z]{8}" title="El usuario debe ser de ocho caracteres" required>
+            <br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Ocho o más caracteres">
+            <br>
+            <input type="submit"  value="Enviar">
+          </form>
+
+          <p class="footnote">Para más información sobre validación con expresiones regulares, pulse  <a href="https://www.w3schools.com/TAGS/att_input_pattern.asp">aquí </a> y <a href="https://www.w3schools.com/js/js_regexp.asp">aquí </a></p>
+    </body>
+</html>

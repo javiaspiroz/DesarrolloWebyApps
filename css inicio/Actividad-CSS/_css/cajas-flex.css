@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html{
+    background-color: #e09969;        
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 15px;
+}
+
+h1 {
+    color: black;
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+}
+
+#banner{
+    /*background-color: #422918;*/
+    background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/coffee-beans-bw-balanced-art.jpg");
+    padding: 15px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+#subtitulo{
+    color: #eeb843;
+    text-align: center;
+    font-size: 2em;
+}
+
+.cajas{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/ /*2x2*/
+    flex-wrap: nowrap; /*4x1*/
+    justify-content: space-between;
+}
+
+.caja_texto{
+    background-color: #eeb843;
+    width: 25%; /*4x1*/
+    /*width: 45%; /*2x2*/
+    height: auto;
+    padding: 20px;
+    padding-top: 5px;
+    margin: 10px;
+}
+
+h2{
+    color: rgb(95, 70, 55);
+    font-size: 30px;
+}
+
+p{
+    text-align: justify;
+}
+
+.product{
+    width: 100%;
+    height: 410px;
+}

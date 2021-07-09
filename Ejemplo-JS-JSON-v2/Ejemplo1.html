@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Ejemplo 1 JQuery</title>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    
+    
+    <script>
+        $(document).ready(function(){
+            var tam_fuente= $("h1").css("font-size");
+           // alert("Tamaño actual de h1: " +tam_fuente);
+             $("h1").css({"background-color": "#bfbfbf", "font-size": "50px", "color": "blue"});
+            
+           var enlace = $("#link_principal").attr("href"); 
+            // alert("Link principal " +enlace);
+            
+            $("#link_principal").attr("href","http://projectbasedschool.universidadeuropea.es"); 
+            
+            $("li").click(function(){ 
+                $(this).hide();
+            });
+        
+            $("#boton_imagen").click(function(){
+                $("#Imagen").hide();
+            });
+             $("#boton2_imagen").click(function(){
+                $("#Imagen").show();
+            });
+            
+            $("#boton_noticias").click(function(){
+                $(".noticias").hide();
+            });
+        
+      
+        
+         $("#boton_verData").click(function(){
+            alert("Texto: " + $("#test_get").text());
+             alert("Código HTML: " + $("#test_get").html());
+             alert("Valor: " + $("#test_input").val());
+               });
+            
+            
+        $("#boton_setData").click(function(){
+            $("#test_get").text("Este párrafo ha sido actualizado");
+               $("#test_get").html("Este párrafo ha sido <b>actualizado</b>");
+            $("#test_input").val("1984");
+             });
+            
+            
+          $("#boton_lista").click(function(){
+                var txt1 = "<li>Elemento 1</li>";              // Creando elemento con HTML
+                var txt2 = $("<li></li>").text("Elemento 2");  // Create elemento con jQuery
+                var txt3 = document.createElement("li");
+                txt3.innerHTML = "Elemento 3";               // Creando texto con  DOM
+                $("#lista").append(txt1, txt2, txt3);     // Agregando a lista los nuevos elementos
+});
+            $("#boton_remove_lista").click(function(){
+                $("#lista").remove();
+            });
+            
+           
+    });
+        
+</script>
+-->
+</head>
+<body>
+<h1>Primer ejemplo con JQuery</h1>
+<a id="link_principal" href="http://www.universidadeuropea.es">UEM</a>
+<div id="principal">
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+	
+</div>
+
+<div id="Imagen"> 
+    <img src="pexels-photo-1056563.jpg" width="30%">
+</div>
+
+<button id="boton_imagen">Esconder imagen</button>    
+<button id="boton2_imagen">Mostrar imagen</button>  
+        
+<h2 class="noticias">Noticias</h2>
+
+    <p class="noticias">Este es un párrafo con la noticia del día.</p>
+    <p>Este es otro párrafo.</p>
+
+<button id="boton_noticias">Esconder noticias</button>
+
+<h2>Prueba GET</h2>
+    <p id="test_get">Párrafo de <b>prueba</b> para ver el funcionamiento de JQuery.</p>
+
+    <p>Dato: <input type="number" id="test_input" value="2018"></p>
+
+<button id="boton_verData">Mostrar Datos</button>
+
+<button id="boton_setData">Actualizar Datos</button>
+    
+<div>
+<h2>Prueba insertar elementos a una lista</h2>    
+    <ul id="lista">
+    
+    </ul>
+    
+    <button id="boton_lista" >Insertar elementos a la lista</button>
+    <button id="boton_remove_lista" >Borrar lista</button>
+    
+    <br><br><br>
+</body>
+</html>

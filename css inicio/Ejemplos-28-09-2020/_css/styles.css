@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Crushed);
+
+html{
+    background-color: #a88989;        
+}
+  
+body {
+	width: 70%;
+	margin: 0 auto;
+	font: 100% Arial, Helvetica, sans-serif;
+    background-color: white; 
+    border-bottom: 10px solid orange;
+}
+    
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2em;
+    font-weight: normal;
+    font-style: italic;
+    margin: 1em 0 em;
+    background-color: cadetblue; 
+    color: #FFF;
+}
+    
+h2{
+    font-family: 'Crushed', cursive;
+    font-size: 32px;
+}
+        
+p {
+	line-height: 2;
+	text-align: justify;
+	margin: 1em 2em .4em ;
+    width: 80%;
+}
+
+a {
+	text-decoration: none; /* Quita el subrayado del link */
+	color: red;
+   
+}
+a:hover {
+    color: forestgreen;
+    font-size: 2em;
+    
+}

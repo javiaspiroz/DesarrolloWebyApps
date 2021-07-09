@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+  
+h1 {
+    color: rgb(179, 7, 7);
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16 px;
+}
+  
+h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12 px;
+    font-style: italic;
+   }
+   
+  p {
+    font-family: verdana;
+    font-size: 20 px;
+  }

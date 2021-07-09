@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=News+Cycle);
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+
+body {
+  background-color: white;
+  font-family: 'Arial', sans-serif;
+}
+.navigation a{
+  text-decoration:none;
+  color:inherit;
+ 
+  }
+
+.navigation ul {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  
+
+}
+
+.navigation li {
+  color: gray;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  position:relative;
+}
+
+.navigation  li.negrita {
+  color: dimgray;
+  font-size: 18px;
+  font-weight: 700; 
+ 
+} 
+
+.navigation li>ul{
+  display:none;
+  }
+
+.navigation  li:hover{
+    font-weight: bold;
+}
+.navigation  li:hover>ul{
+    display:block;
+    position:absolute;
+    top:40px;
+    left:0px;
+    text-align: left;
+    background-color: black;  
+    opacity: 0.8;
+    width:100%; 
+    
+}
+/*
+.navigation  li:hover>ul li{
+  padding-top: 10px;
+  
+}
+
+*/
+
+.navigation  li ul a:hover{
+
+  text-align: left;
+  color: orange;
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+
+#banner {
+  background-image: url("https://images.pexels.com/photos/696080/pexels-photo-696080.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: bottom center;
+  height: 70vh;  
+  width: 100vw;   /* Lo  puedo poner tambien como 100% */
+}
+
+#banner .contenido h1 {
+  border: 2px solid white;
+  position: relative;
+  top: 20vh;
+  width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  color: white;
+  font-family: 'News Cycle', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+#main {
+  margin: 0 auto;
+  padding: 80px;
+  text-align: justify;
+  width: 80%;
+
+}
+
+
+
+h2 {
+
+  color: rgb(63, 70, 100);
+  font-size: 28px;
+  line-height: 48px;
+  padding: 100px;
+  margin: 30px 20px;
+  text-align: center;
+  font-family: 'Handlee', cursive;
+  /*border: 1px solid red;*/
+}
+
+
+p {
+  color: grey;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 30px; 
+  padding: 10px 20px;
+ 
+}
+
+
+.quote {
+  margin: 0px  auto;
+  padding: 10px 50px;
+  width: 80%;
+  /*border: 1px solid black;*/
+     
+}
+
+
+
+.footer {
+  border: 1px solid grey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.footer a {
+  background:  rgb(63, 70, 100);
+  border: 1px solid rgb(63, 70, 100);
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  background: white;
+  border: 2px solid  rgb(63, 70, 100);
+  color:  rgb(63, 70, 100);
+  font-weight: bold;
+}

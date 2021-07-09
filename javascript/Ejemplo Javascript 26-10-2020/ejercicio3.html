@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejercicio 1 - DOM básico</title>
+
+<script type="text/javascript">
+// window.onload indica que se cargara la función cuando laventana se cargue.
+
+window.onload = function() {
+
+    var fecha = new Date();
+    var dia  = fecha.toLocaleDateString();
+    var hora = fecha.toLocaleTimeString();
+    var div_fecha = document.getElementById("fecha");
+    var texto = document.createTextNode("Hoy es "+dia +" y son las "+ hora + "\n");
+    var h1 = document.createElement("h1");
+    h1.appendChild(texto);
+    div_fecha.appendChild(h1);
+    
+    //div_fecha.innerHTML="<b>Hoy es "+dia +" y son las "+ hora + "\n</b>";
+    
+}
+
+function limpiar(){
+    document.getElementById("n1").value="";
+    var edad = document.getElementById("n1");
+    edad.value="";
+    var res= document.getElementById("resultado");
+    res.innerHTML="";
+}
+
+function calcula_edad_humana(){
+    var edad = document.getElementById("n1");
+    var edad_humana=edad.value*7;
+    
+    var texto = document.createTextNode("La edad aproximada de tu perro es de "+ String(edad_humana)+ " años humanos.");
+    var res= document.getElementById("resultado");
+    res.appendChild(texto);
+}
+
+</script>
+</head>
+
+<body>
+    
+    <div id="fecha">
+ 
+    </div> 
+   
+<div id="bombilla">
+<img src="sin_idea.jpg" ondblclick="this.src='con_idea.jpg'" onclick="this.src='sin_idea.jpg'"/>
+</div>
+
+
+<div id="calculadora">
+  <h2>Caluladora de años perrunos</h2>
+   ¿Cuántos años tiene tu perro?: 
+    
+   <input type="text" id="n1">
+    <button onclick="calcula_edad_humana()"> Calcular</button>
+    <button onclick="limpiar()"> Limpiar</button>
+   
+    <div id ="resultado">
+     
+   </div>
+    
+</div>
+</body>
+</html>

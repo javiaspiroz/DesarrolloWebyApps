@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>I love coffee - Contacto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="_css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm ">
+    <a class="navbar-brand" href="index.html">I love coffee</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="quienesSomos.html">Quienes somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="nuestroProducto.html">Nuestros productos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto.html">Contáctanos</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+      <form action="action_contact.php">
+      
+        <label for="fname">Nombre</label>
+        <input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
+      
+        <label for="lname">Apellido</label>
+        <input type="text" id="lname" name="lastname" placeholder="Tu apellido...">
+
+        <label for="lemail">eMail</label>
+        <input type="text" id="lemail" name="email" placeholder="Tu eMail...">
+      
+        <label for="country">País</label>
+        <select id="country" name="country">
+          <option value="espana">España</option>
+          <option value="portugal">Portugal</option>
+          <option value="uk">Reino Unido</option>
+        </select>
+      
+        <label for="subject">Asunto</label>
+        <textarea id="subject" name="subject" placeholder="Deja tu mensaje..." style="height:200px"></textarea>
+      
+        <input type="submit" value="Enviar">
+      
+      </form>
+    </div>
+  </body>
+</html>
